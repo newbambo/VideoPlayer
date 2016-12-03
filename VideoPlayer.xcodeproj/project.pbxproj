@@ -20,11 +20,6 @@
 		9F56D5F81DEDA8DA00EF1ECE /* abc.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D5F61DEDA8DA00EF1ECE /* abc.mp4 */; };
 		9F56D5F91DEDA8DA00EF1ECE /* qwe.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D5F71DEDA8DA00EF1ECE /* qwe.mp4 */; };
 		9F56D5FD1DEDBAD700EF1ECE /* wer.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D5FC1DEDBAD700EF1ECE /* wer.MOV */; };
-		9F56D6221DEE806500EF1ECE /* waterLayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D6211DEE806500EF1ECE /* waterLayer.png */; };
-		9F56D6381DEE899B00EF1ECE /* yoze2021.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D6351DEE899B00EF1ECE /* yoze2021.mp4 */; };
-		9F56D6391DEE899B00EF1ECE /* yoze2022.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D6361DEE899B00EF1ECE /* yoze2022.mp4 */; };
-		9F56D63A1DEE899B00EF1ECE /* yoze2023.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D6371DEE899B00EF1ECE /* yoze2023.mp4 */; };
-		9F56D63C1DEEA33600EF1ECE /* yoze2024.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9F56D63B1DEEA33600EF1ECE /* yoze2024.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,11 +61,6 @@
 		9F56D5F61DEDA8DA00EF1ECE /* abc.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = abc.mp4; sourceTree = "<group>"; };
 		9F56D5F71DEDA8DA00EF1ECE /* qwe.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = qwe.mp4; sourceTree = "<group>"; };
 		9F56D5FC1DEDBAD700EF1ECE /* wer.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = wer.MOV; sourceTree = "<group>"; };
-		9F56D6211DEE806500EF1ECE /* waterLayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterLayer.png; sourceTree = "<group>"; };
-		9F56D6351DEE899B00EF1ECE /* yoze2021.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yoze2021.mp4; sourceTree = "<group>"; };
-		9F56D6361DEE899B00EF1ECE /* yoze2022.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yoze2022.mp4; sourceTree = "<group>"; };
-		9F56D6371DEE899B00EF1ECE /* yoze2023.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yoze2023.mp4; sourceTree = "<group>"; };
-		9F56D63B1DEEA33600EF1ECE /* yoze2024.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yoze2024.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +116,6 @@
 			children = (
 				9F56D5FC1DEDBAD700EF1ECE /* wer.MOV */,
 				9F56D5F61DEDA8DA00EF1ECE /* abc.mp4 */,
-				9F56D6211DEE806500EF1ECE /* waterLayer.png */,
 				9F56D5F71DEDA8DA00EF1ECE /* qwe.mp4 */,
 				9F56D5C11DEDA6C900EF1ECE /* AppDelegate.h */,
 				9F56D5C21DEDA6C900EF1ECE /* AppDelegate.m */,
@@ -144,10 +133,6 @@
 		9F56D5BE1DEDA6C900EF1ECE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9F56D6351DEE899B00EF1ECE /* yoze2021.mp4 */,
-				9F56D6361DEE899B00EF1ECE /* yoze2022.mp4 */,
-				9F56D6371DEE899B00EF1ECE /* yoze2023.mp4 */,
-				9F56D63B1DEEA33600EF1ECE /* yoze2024.mp4 */,
 				9F56D5BF1DEDA6C900EF1ECE /* main.m */,
 			);
 			name = "Supporting Files";
@@ -289,14 +274,9 @@
 				9F56D5F81DEDA8DA00EF1ECE /* abc.mp4 in Resources */,
 				9F56D5CE1DEDA6C900EF1ECE /* LaunchScreen.storyboard in Resources */,
 				9F56D5CB1DEDA6C900EF1ECE /* Assets.xcassets in Resources */,
-				9F56D6221DEE806500EF1ECE /* waterLayer.png in Resources */,
-				9F56D6391DEE899B00EF1ECE /* yoze2022.mp4 in Resources */,
 				9F56D5FD1DEDBAD700EF1ECE /* wer.MOV in Resources */,
 				9F56D5C91DEDA6C900EF1ECE /* Main.storyboard in Resources */,
-				9F56D63C1DEEA33600EF1ECE /* yoze2024.mp4 in Resources */,
-				9F56D63A1DEE899B00EF1ECE /* yoze2023.mp4 in Resources */,
 				9F56D5F91DEDA8DA00EF1ECE /* qwe.mp4 in Resources */,
-				9F56D6381DEE899B00EF1ECE /* yoze2021.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +533,7 @@
 				9F56D5EA1DEDA6CA00EF1ECE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F56D5EB1DEDA6CA00EF1ECE /* Build configuration list for PBXNativeTarget "VideoPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +542,7 @@
 				9F56D5ED1DEDA6CA00EF1ECE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F56D5EE1DEDA6CA00EF1ECE /* Build configuration list for PBXNativeTarget "VideoPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +551,7 @@
 				9F56D5F01DEDA6CA00EF1ECE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

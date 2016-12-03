@@ -39,15 +39,13 @@
     [super viewDidLoad];
     self.allowPlay = YES;
     // Do any additional setup after loading the view, typically from a nib.
-     self.oneAsset =   [AVAsset assetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"yoze2021" ofType:@"mp4"]]];
-    AVAsset *secondAsset =   [AVAsset assetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"yoze2022" ofType:@"mp4"]]];
-    AVAsset *thirdAsset =   [AVAsset assetWithURL:[NSURL URLWithString:@"http://files.yoze.im/upload/20160928/20160928051326160_0.mp4"]];
-        AVAsset *thirdAsset1 =   [AVAsset assetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"yoze2023" ofType:@"mp4"]]];
-            AVAsset *thirdAsset2 =   [AVAsset assetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"yoze2024" ofType:@"mp4"]]];
+     self.oneAsset =   [AVAsset assetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"wer" ofType:@"MOV"]]];
+    AVAsset *secondAsset =   [AVAsset assetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"abc" ofType:@"mp4"]]];
+        AVAsset *thirdAsset1 =   [AVAsset assetWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"qwe" ofType:@"mp4"]]];
     
 //    assetArray = @[self.oneAsset,secondAsset,thirdAsset,thirdAsset1,thirdAsset2];
     
-     assetArray = @[self.oneAsset];
+     assetArray = @[self.oneAsset,secondAsset,thirdAsset1];
     
     self.item =[AVPlayerItem playerItemWithAsset:assetArray[0]];
 
