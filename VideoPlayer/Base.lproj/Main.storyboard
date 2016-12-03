@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwH-md-OQg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="375"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zha-mF-VRA">
+                                        <rect key="frame" x="172" y="172.5" width="31" height="30"/>
+                                        <state key="normal" title="播放"/>
+                                        <connections>
+                                            <action selector="playBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uTg-jE-UlI"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="waterLayer.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vlc-1x-fyM">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="Mye-lX-6sX"/>
+                                            <constraint firstAttribute="height" constant="180" id="yP8-Bb-fh1"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Vlc-1x-fyM" firstAttribute="leading" secondItem="jwH-md-OQg" secondAttribute="leading" id="7Fi-89-IVw"/>
+                                    <constraint firstAttribute="width" secondItem="jwH-md-OQg" secondAttribute="height" multiplier="1:1" id="8mc-iC-XqP"/>
+                                    <constraint firstItem="Zha-mF-VRA" firstAttribute="centerX" secondItem="jwH-md-OQg" secondAttribute="centerX" id="Tiv-qG-RPZ"/>
+                                    <constraint firstItem="Vlc-1x-fyM" firstAttribute="top" secondItem="jwH-md-OQg" secondAttribute="top" id="hF2-84-B8L"/>
+                                    <constraint firstItem="Zha-mF-VRA" firstAttribute="centerY" secondItem="jwH-md-OQg" secondAttribute="centerY" id="lu3-gI-Vqc"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6V6-7y-xhT">
+                                <rect key="frame" x="0.0" y="395" width="375" height="100"/>
+                                <color key="backgroundColor" red="0.43137254899999999" green="0.72156862749999995" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="uCr-MY-Odu"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9zV-KB-r9B"/>
+                                </connections>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gLR-4B-zVs">
+                                <rect key="frame" x="20" y="395" width="10" height="100"/>
+                                <color key="backgroundColor" red="0.79215686269999996" green="0.25490196079999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="AzK-Gk-W7a"/>
+                                    <constraint firstAttribute="height" constant="100" id="Fhm-gg-wYV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jwH-md-OQg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8bj-KQ-jti"/>
+                            <constraint firstItem="6V6-7y-xhT" firstAttribute="top" secondItem="jwH-md-OQg" secondAttribute="bottom" id="CRd-D4-rOF"/>
+                            <constraint firstAttribute="trailing" secondItem="6V6-7y-xhT" secondAttribute="trailing" id="E6n-V5-bUW"/>
+                            <constraint firstItem="gLR-4B-zVs" firstAttribute="top" secondItem="jwH-md-OQg" secondAttribute="bottom" id="TnW-VF-BUL"/>
+                            <constraint firstItem="gLR-4B-zVs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="el8-KU-vBu"/>
+                            <constraint firstItem="6V6-7y-xhT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oR0-X4-S75"/>
+                            <constraint firstItem="jwH-md-OQg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wn1-rz-X2A"/>
+                            <constraint firstAttribute="trailing" secondItem="jwH-md-OQg" secondAttribute="trailing" id="x1i-hW-mJk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="WaterImage" destination="Vlc-1x-fyM" id="r6K-9P-t4O"/>
+                        <outlet property="headerView" destination="jwH-md-OQg" id="dTx-90-Z7q"/>
+                        <outlet property="playBtn" destination="Zha-mF-VRA" id="N0L-Ye-l5F"/>
+                        <outlet property="scrollView" destination="6V6-7y-xhT" id="q6H-mG-RH2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="85.907046476761622"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="waterLayer.png" width="720" height="720"/>
+    </resources>
+</document>
